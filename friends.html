@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends</title>
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- font awsome -->
+<link rel="stylesheet" href="./dist/css/all.min.css">
+<!-- tailwind -->
+<link rel="stylesheet" href="./dist/css/output.css">
+</head>
+<body >
+<div class="page flex min-h-screen bg-slate-100">
+<aside class="w-14 md:w-60 p-2 md:p-4 relative bg-white shadow-lg flex flex-col justify-start items-center">
+<h1><a class="block text-center text-xs  md:text-xl font-bold mb-2 md:mb-8 relative before:absolute before:w-24 before:h-0.5 before:bg-black before:-bottom-2 before:left-1/2 before:-translate-x-1/2
+    after:absolute after:w-5 after:h-5 after:bg-black after:rounded-full after:border-4 after:border-white after:left-1/2 after:-translate-x-1/2 after:-bottom-4 after:hidden before:hidden md:before:block md:after:block" href="#">Bassam</a></h1>
+    <ul class="space-y-3 w-full">
+        <li>
+          <a class=" rounded-md block  p-2 md:px-4  hover:bg-stone-100" href="index.html">
+            <i class="fa-regular fa-chart-bar fa-fw"></i>
+            <span class="hidden md:inline ml-2">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a class=" rounded-md block  p-2 md:px-4  hover:bg-stone-100" href="settings.html">
+            <i class="fa-solid fa-gear fa-fw"></i>
+            <span class="hidden md:inline ml-2">Settings</span>
+          </a>
+        </li>
+        <li>
+          <a class=" rounded-md block  p-2 md:px-4  hover:bg-stone-100" href="profile.html">
+            <i class="fa-regular fa-user fa-fw"></i>
+            <span class="hidden md:inline ml-2">Profile</span>
+          </a>
+        </li>
+        <li>
+          <a class=" rounded-md  block  p-2 md:px-4  hover:bg-stone-100" href="projects.html">
+            <i class="fa-solid fa-diagram-project fa-fw"></i>
+            <span class="hidden md:inline ml-2">Projects</span>
+          </a>
+        </li>
+        <li>
+          <a class=" rounded-md block p-2 md:px-4 hover:bg-stone-100" href="courses.html">
+            <i class="fa-solid fa-graduation-cap fa-fw"></i>
+            <span class="hidden md:inline ml-2">Courses</span>
+          </a>
+        </li>
+        <li>
+          <a class="active rounded-md block p-2 md:px-4 hover:bg-stone-100" href="friends.html">
+            <i class="fa-regular fa-circle-user fa-fw"></i>
+            <span class="hidden md:inline ml-2">Friends</span>
+          </a>
+        </li>
+        <li>
+          <a class=" rounded-md  block  p-2 md:px-4  hover:bg-stone-100" href="files.html">
+            <i class="fa-regular fa-file fa-fw"></i>
+            <span class="hidden md:inline ml-2">Files</span>
+          </a>
+        </li>
+        <li>
+          <a class=" rounded-md  block  p-2 md:px-4  hover:bg-stone-100" href="plans.html">
+            <i class="fa-regular fa-credit-card fa-fw"></i>
+            <span class="hidden md:inline ml-2">Plans</span>
+          </a>
+        </li>
+      </ul>
+</aside>
+<div class="wrapper w-full overflow-hidden">
+    <!-- start head -->
+    <div class="head p-4 bg-white flex items-center justify-between">
+        <div class="relative before:absolute before:content-['\f002'] before:font-['Font_Awesome_6_Free'] before:font-black before:left-2 before:top-1/2 before:-translate-y-1/2 before:text-stone-300" type="search">
+            <input class="border text-sm border-stone-300 rounded-md py-2 pl-7 w-44 focus:w-52 transition-all duration-300 focus:outline-0 " placeholder="Type A Keyword">
+        </div>
+        <div class="flex items-center gap-3">
+            <div class="relative before:absolute before:w-3 before:h-3 before:bg-red before:rounded-full before:-right-1 before:-top-1">
+                <i class="fa-regular fa-bell fa-xl "></i>
+            </div>
+            <img class="w-9 h-9" src="./dist/imgs/avatar.png" alt="">
+        </div>
+    </div>
+    <!-- end head -->
+    <h1 class="title">Friends</h1> 
+    <!-- start Friends -->
+    <div class=" mx-3 md:mx-5 my-5  max-w-full grid grid-cols-1  lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-5  gap-3 md:gap-5">
+        <div class="p-5 rounded-xl bg-white relative">
+            <div class="flex gap-2 absolute left-5 top-5">
+                <i class="fa-solid fa-phone w-8 h-8 flex items-center justify-center rounded-full text-sm text-gray bg-zinc-200 hover:text-white hover:bg-main-blue transition-all duration-300 cursor-pointer"></i>
+                <i class="fa-regular  fa-envelope w-8 h-8 flex items-center justify-center rounded-full text-sm text-gray bg-zinc-200 hover:text-white hover:bg-main-blue transition-all duration-300 cursor-pointer"></i>
+            </div>
+            <div class="p-5 flex flex-col  justify-center items-center space-y-1">
+                <img class="w-24 rounded-full" src="./dist/imgs/friend-01.jpg" alt="">
+                <h3 class="font-bold">Ahmed Nasser</h3>
+                <p class="text-gray">JavaScript Developer</p>
+            </div>
+            <div class="space-y-2 py-5 border-y border-zinc-200" >
+                <div class=" space-x-2">
+                    <i class="fa-regular fa-face-smile fa-fw"></i>
+                    <span> 99 Friend</span>
+                </div>
+                <div class="space-x-2">
+                    <i class="fa-solid fa-code-commit fa-fw"></i>
+                    <span> 15 Projects</span>
+                </div>
+                <div class=" space-x-2">
+                    <i class="fa-regular fa-newspaper fa-fw"></i>
+                    <span>  25 Articles</span>
+                </div>
+            </div>
+            <div class="pt-3 flex justify-between items-center">
+                <span class="text-xs text-gray">Joined 02/10/2021</span>
+                <div>
+                    <a class="py-1 px-2 rounded-lg text-white text-xs bg-main-blue" href="#">Profile</a>
+                    <a class="py-1 px-2 rounded-lg text-white text-xs bg-red" href="#">Remove</a>
+                </div>
+            </div>
+        </div>
+        <div class="p-5 rounded-xl bg-white relative">
+            <div class="flex gap-2 absolute left-5 top-5">
+                <i class="fa-solid fa-phone w-8 h-8 flex items-center justify-center rounded-full text-sm text-gray bg-zinc-200 hover:text-white hover:bg-main-blue transition-all duration-300 cursor-pointer"></i>
+                <i class="fa-regular  fa-envelope w-8 h-8 flex items-center justify-center rounded-full text-sm text-gray bg-zinc-200 hover:text-white hover:bg-main-blue transition-all duration-300 cursor-pointer"></i>
+            </div>
+            <div class="p-5 flex flex-col  justify-center items-center space-y-1">
+                <img class="w-24 rounded-full" src="./dist/imgs/friend-02.jpg" alt="">
+                <h3 class="font-bold">Omar Fathy</h3>
+                <p class="text-gray">Cloud Developer</p>
+            </div>
+            <div class="space-y-2 py-5 border-y border-zinc-200" >
+                <div class=" space-x-2">
+                    <i class="fa-regular fa-face-smile fa-fw"></i>
+                    <span> 30 Friend</span>
+                </div>
+                <div class="space-x-2">
+                    <i class="fa-solid fa-code-commit fa-fw"></i>
+                    <span> 11 Projects</span>
+                </div>
+                <div class=" space-x-2">
+                    <i class="fa-regular fa-newspaper fa-fw"></i>
+                    <span>  12 Articles</span>
+                </div>
+            </div>
+            <div class="pt-3 flex justify-between items-center">
+                <span class="text-xs text-gray">Joined 02/08/2020</span>
+                <div>
+                    <a class="py-1 px-2 rounded-lg text-white text-xs bg-main-blue" href="#">Profile</a>
+                    <a class="py-1 px-2 rounded-lg text-white text-xs bg-red" href="#">Remove</a>
+                </div>
+            </div>
+        </div>
+        <div class="p-5 rounded-xl bg-white relative">
+            <div class="flex gap-2 absolute left-5 top-5">
+                <i class="fa-solid fa-phone w-8 h-8 flex items-center justify-center rounded-full text-sm text-gray bg-zinc-200 hover:text-white hover:bg-main-blue transition-all duration-300 cursor-pointer"></i>
+                <i class="fa-regular  fa-envelope w-8 h-8 flex items-center justify-center rounded-full text-sm text-gray bg-zinc-200 hover:text-white hover:bg-main-blue transition-all duration-300 cursor-pointer"></i>
+            </div>
+            <div class="p-5 flex flex-col  justify-center items-center space-y-1">
+                <img class="w-24 rounded-full" src="./dist/imgs/friend-03.jpg" alt="">
+                <h3 class="font-bold">Omar Ahmed</h3>
+                <p class="text-gray">Mobile Developer</p>
+            </div>
+            <div class="space-y-2 py-5 border-y border-zinc-200" >
+                <div class=" space-x-2">
+                    <i class="fa-regular fa-face-smile fa-fw"></i>
+                    <span> 80 Friend</span>
+                </div>
+                <div class="space-x-2">
+                    <i class="fa-solid fa-code-commit fa-fw"></i>
+                    <span>20 Projects</span>
+                </div>
+                <div class=" space-x-2">
+                    <i class="fa-regular fa-newspaper fa-fw"></i>
+                    <span>  18 Articles</span>
+                </div>
+            </div>
+            <div class="pt-3 flex justify-between items-center">
+                <span class="text-xs text-gray">Joined 02/06/2020</span>
+                <div>
+                    <a class="py-1 px-2 rounded-lg text-white text-xs bg-main-blue" href="#">Profile</a>
+                    <a class="py-1 px-2 rounded-lg text-white text-xs bg-red" href="#">Remove</a>
+                </div>
+            </div>
+        </div>
+        <div class="p-5 rounded-xl bg-white relative">
+            <div class="flex gap-2 absolute left-5 top-5">
+                <i class="fa-solid fa-phone w-8 h-8 flex items-center justify-center rounded-full text-sm text-gray bg-zinc-200 hover:text-white hover:bg-main-blue transition-all duration-300 cursor-pointer"></i>
+                <i class="fa-regular  fa-envelope w-8 h-8 flex items-center justify-center rounded-full text-sm text-gray bg-zinc-200 hover:text-white hover:bg-main-blue transition-all duration-300 cursor-pointer"></i>
+            </div>
+            <div class="p-5 flex flex-col  justify-center items-center space-y-1">
+                <img class="w-24 rounded-full" src="./dist/imgs/friend-04.jpg" alt="">
+                <h3 class="font-bold">Shady Nabil</h3>
+                <p class="text-gray">Back-End Developer</p>
+            </div>
+            <div class="space-y-2 py-5 border-y border-zinc-200" >
+                <div class=" space-x-2">
+                    <i class="fa-regular fa-face-smile fa-fw"></i>
+                    <span> 70 Friend</span>
+                </div>
+                <div class="space-x-2">
+                    <i class="fa-solid fa-code-commit fa-fw"></i>
+                    <span>30 Projects</span>
+                </div>
+                <div class=" space-x-2">
+                    <i class="fa-regular fa-newspaper fa-fw"></i>
+                    <span>  18 Articles</span>
+                </div>
+            </div>
+            <div class="pt-3 flex justify-between items-center">
+                <span class="text-xs text-gray">Joined 28/06/2020</span>
+                <div>
+                    <a class="py-1 px-2 rounded-lg text-white text-xs bg-main-blue" href="#">Profile</a>
+                    <a class="py-1 px-2 rounded-lg text-white text-xs bg-red" href="#">Remove</a>
+                </div>
+            </div>
+        </div>
+        <div class="p-5 rounded-xl bg-white relative">
+            <div class="flex gap-2 absolute left-5 top-5">
+                <i class="fa-solid fa-phone w-8 h-8 flex items-center justify-center rounded-full text-sm text-gray bg-zinc-200 hover:text-white hover:bg-main-blue transition-all duration-300 cursor-pointer"></i>
+                <i class="fa-regular  fa-envelope w-8 h-8 flex items-center justify-center rounded-full text-sm text-gray bg-zinc-200 hover:text-white hover:bg-main-blue transition-all duration-300 cursor-pointer"></i>
+            </div>
+            <div class="p-5 flex flex-col  justify-center items-center space-y-1">
+                <img class="w-24 rounded-full" src="./dist/imgs/friend-05.jpg" alt="">
+                <h3 class="font-bold">Mohamed Ibrahim</h3>
+                <p class="text-gray">Algorithm Developer</p>
+            </div>
+            <div class="space-y-2 py-5 border-y border-zinc-200" >
+                <div class=" space-x-2">
+                    <i class="fa-regular fa-face-smile fa-fw"></i>
+                    <span> 80 Friend</span>
+                </div>
+                <div class="space-x-2">
+                    <i class="fa-solid fa-code-commit fa-fw"></i>
+                    <span>30 Projects</span>
+                </div>
+                <div class=" space-x-2">
+                    <i class="fa-regular fa-newspaper fa-fw"></i>
+                    <span>  18 Articles</span>
+                </div>
+            </div>
+            <div class="pt-3 flex justify-between items-center">
+                <span class="text-xs text-gray">Joined 28/06/2020</span>
+                <div>
+                    <a class="py-1 px-2 rounded-lg text-white text-xs bg-main-blue" href="#">Profile</a>
+                    <a class="py-1 px-2 rounded-lg text-white text-xs bg-red" href="#">Remove</a>
+                </div>
+            </div>
+        </div>
+        <div class="p-5 rounded-xl bg-white relative">
+            <div class="flex gap-2 absolute left-5 top-5">
+                <i class="fa-solid fa-phone w-8 h-8 flex items-center justify-center rounded-full text-sm text-gray bg-zinc-200 hover:text-white hover:bg-main-blue transition-all duration-300 cursor-pointer"></i>
+                <i class="fa-regular  fa-envelope w-8 h-8 flex items-center justify-center rounded-full text-sm text-gray bg-zinc-200 hover:text-white hover:bg-main-blue transition-all duration-300 cursor-pointer"></i>
+            </div>
+            <div class="p-5 flex flex-col  justify-center items-center space-y-1">
+                <img class="w-24 rounded-full" src="./dist/imgs/friend-04.jpg" alt="">
+                <h3 class="font-bold">Shady Nabil</h3>
+                <p class="text-gray">Back-End Developer</p>
+            </div>
+            <div class="space-y-2 py-5 border-y border-zinc-200" >
+                <div class=" space-x-2">
+                    <i class="fa-regular fa-face-smile fa-fw"></i>
+                    <span> 70 Friend</span>
+                </div>
+                <div class="space-x-2">
+                    <i class="fa-solid fa-code-commit fa-fw"></i>
+                    <span>30 Projects</span>
+                </div>
+                <div class=" space-x-2">
+                    <i class="fa-regular fa-newspaper fa-fw"></i>
+                    <span>  18 Articles</span>
+                </div>
+            </div>
+            <div class="pt-3 flex justify-between items-center">
+                <span class="text-xs text-gray">Joined 28/06/2020</span>
+                <div>
+                    <a class="py-1 px-2 rounded-lg text-white text-xs bg-main-blue" href="#">Profile</a>
+                    <a class="py-1 px-2 rounded-lg text-white text-xs bg-red" href="#">Remove</a>
+                </div>
+            </div>
+        </div>
+        <div class="p-5 rounded-xl bg-white relative">
+            <div class="flex gap-2 absolute left-5 top-5">
+                <i class="fa-solid fa-phone w-8 h-8 flex items-center justify-center rounded-full text-sm text-gray bg-zinc-200 hover:text-white hover:bg-main-blue transition-all duration-300 cursor-pointer"></i>
+                <i class="fa-regular  fa-envelope w-8 h-8 flex items-center justify-center rounded-full text-sm text-gray bg-zinc-200 hover:text-white hover:bg-main-blue transition-all duration-300 cursor-pointer"></i>
+            </div>
+            <div class="p-5 flex flex-col  justify-center items-center space-y-1">
+                <img class="w-24 rounded-full" src="./dist/imgs/friend-02.jpg" alt="">
+                <h3 class="font-bold">Omar Fathy</h3>
+                <p class="text-gray">Cloud Developer</p>
+            </div>
+            <div class="space-y-2 py-5 border-y border-zinc-200" >
+                <div class=" space-x-2">
+                    <i class="fa-regular fa-face-smile fa-fw"></i>
+                    <span> 30 Friend</span>
+                </div>
+                <div class="space-x-2">
+                    <i class="fa-solid fa-code-commit fa-fw"></i>
+                    <span> 11 Projects</span>
+                </div>
+                <div class=" space-x-2">
+                    <i class="fa-regular fa-newspaper fa-fw"></i>
+                    <span>  12 Articles</span>
+                </div>
+            </div>
+            <div class="pt-3 flex justify-between items-center">
+                <span class="text-xs text-gray">Joined 02/08/2020</span>
+                <div>
+                    <a class="py-1 px-2 rounded-lg text-white text-xs bg-main-blue" href="#">Profile</a>
+                    <a class="py-1 px-2 rounded-lg text-white text-xs bg-red" href="#">Remove</a>
+                </div>
+            </div>
+        </div>
+        <div class="p-5 rounded-xl bg-white relative">
+            <div class="flex gap-2 absolute left-5 top-5">
+                <i class="fa-solid fa-phone w-8 h-8 flex items-center justify-center rounded-full text-sm text-gray bg-zinc-200 hover:text-white hover:bg-main-blue transition-all duration-300 cursor-pointer"></i>
+                <i class="fa-regular  fa-envelope w-8 h-8 flex items-center justify-center rounded-full text-sm text-gray bg-zinc-200 hover:text-white hover:bg-main-blue transition-all duration-300 cursor-pointer"></i>
+            </div>
+            <div class="p-5 flex flex-col  justify-center items-center space-y-1">
+                <img class="w-24 rounded-full" src="./dist/imgs/friend-05.jpg" alt="">
+                <h3 class="font-bold">Mohamed Ibrahim</h3>
+                <p class="text-gray">Algorithm Developer</p>
+            </div>
+            <div class="space-y-2 py-5 border-y border-zinc-200" >
+                <div class=" space-x-2">
+                    <i class="fa-regular fa-face-smile fa-fw"></i>
+                    <span> 80 Friend</span>
+                </div>
+                <div class="space-x-2">
+                    <i class="fa-solid fa-code-commit fa-fw"></i>
+                    <span>30 Projects</span>
+                </div>
+                <div class=" space-x-2">
+                    <i class="fa-regular fa-newspaper fa-fw"></i>
+                    <span>  18 Articles</span>
+                </div>
+            </div>
+            <div class="pt-3 flex justify-between items-center">
+                <span class="text-xs text-gray">Joined 28/06/2020</span>
+                <div>
+                    <a class="py-1 px-2 rounded-lg text-white text-xs bg-main-blue" href="#">Profile</a>
+                    <a class="py-1 px-2 rounded-lg text-white text-xs bg-red" href="#">Remove</a>
+                </div>
+            </div>
+        </div>
+        <div class="p-5 rounded-xl bg-white relative">
+            <div class="flex gap-2 absolute left-5 top-5">
+                <i class="fa-solid fa-phone w-8 h-8 flex items-center justify-center rounded-full text-sm text-gray bg-zinc-200 hover:text-white hover:bg-main-blue transition-all duration-300 cursor-pointer"></i>
+                <i class="fa-regular  fa-envelope w-8 h-8 flex items-center justify-center rounded-full text-sm text-gray bg-zinc-200 hover:text-white hover:bg-main-blue transition-all duration-300 cursor-pointer"></i>
+            </div>
+            <div class="p-5 flex flex-col  justify-center items-center space-y-1">
+                <img class="w-24 rounded-full" src="./dist/imgs/friend-01.jpg" alt="">
+                <h3 class="font-bold">Ahmed Nasser</h3>
+                <p class="text-gray">JavaScript Developer</p>
+            </div>
+            <div class="space-y-2 py-5 border-y border-zinc-200" >
+                <div class=" space-x-2">
+                    <i class="fa-regular fa-face-smile fa-fw"></i>
+                    <span> 99 Friend</span>
+                </div>
+                <div class="space-x-2">
+                    <i class="fa-solid fa-code-commit fa-fw"></i>
+                    <span> 15 Projects</span>
+                </div>
+                <div class=" space-x-2">
+                    <i class="fa-regular fa-newspaper fa-fw"></i>
+                    <span>  25 Articles</span>
+                </div>
+            </div>
+            <div class="pt-3 flex justify-between items-center">
+                <span class="text-xs text-gray">Joined 02/10/2021</span>
+                <div>
+                    <a class="py-1 px-2 rounded-lg text-white text-xs bg-main-blue" href="#">Profile</a>
+                    <a class="py-1 px-2 rounded-lg text-white text-xs bg-red" href="#">Remove</a>
+                </div>
+            </div>
+        </div>
+        <div class="p-5 rounded-xl bg-white relative">
+            <div class="flex gap-2 absolute left-5 top-5">
+                <i class="fa-solid fa-phone w-8 h-8 flex items-center justify-center rounded-full text-sm text-gray bg-zinc-200 hover:text-white hover:bg-main-blue transition-all duration-300 cursor-pointer"></i>
+                <i class="fa-regular  fa-envelope w-8 h-8 flex items-center justify-center rounded-full text-sm text-gray bg-zinc-200 hover:text-white hover:bg-main-blue transition-all duration-300 cursor-pointer"></i>
+            </div>
+            <div class="p-5 flex flex-col  justify-center items-center space-y-1">
+                <img class="w-24 rounded-full" src="./dist/imgs/friend-03.jpg" alt="">
+                <h3 class="font-bold">Omar Ahmed</h3>
+                <p class="text-gray">Mobile Developer</p>
+            </div>
+            <div class="space-y-2 py-5 border-y border-zinc-200" >
+                <div class=" space-x-2">
+                    <i class="fa-regular fa-face-smile fa-fw"></i>
+                    <span> 80 Friend</span>
+                </div>
+                <div class="space-x-2">
+                    <i class="fa-solid fa-code-commit fa-fw"></i>
+                    <span>20 Projects</span>
+                </div>
+                <div class=" space-x-2">
+                    <i class="fa-regular fa-newspaper fa-fw"></i>
+                    <span>  18 Articles</span>
+                </div>
+            </div>
+            <div class="pt-3 flex justify-between items-center">
+                <span class="text-xs text-gray">Joined 02/06/2020</span>
+                <div>
+                    <a class="py-1 px-2 rounded-lg text-white text-xs bg-main-blue" href="#">Profile</a>
+                    <a class="py-1 px-2 rounded-lg text-white text-xs bg-red" href="#">Remove</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end Friends-->
+    </div>
+</div>
+</body>
+</html>

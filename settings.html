@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- font awsome -->
+<link rel="stylesheet" href="./dist/css/all.min.css">
+<!-- tailwind -->
+<link rel="stylesheet" href="./dist/css/output.css">
+</head>
+<body >
+<div class="page flex min-h-screen bg-slate-100">
+<aside class="w-14 md:w-60 p-2 md:p-4 relative bg-white shadow-lg flex flex-col justify-start items-center">
+<h1><a class="block text-center text-xs  md:text-xl font-bold mb-2 md:mb-8 relative before:absolute before:w-24 before:h-0.5 before:bg-black before:-bottom-2 before:left-1/2 before:-translate-x-1/2
+    after:absolute after:w-5 after:h-5 after:bg-black after:rounded-full after:border-4 after:border-white after:left-1/2 after:-translate-x-1/2 after:-bottom-4 after:hidden before:hidden md:before:block md:after:block" href="#">Bassam</a></h1>
+    <ul class="space-y-3 w-full">
+        <li>
+          <a class=" rounded-md block  p-2 md:px-4  hover:bg-stone-100" href="index.html">
+            <i class="fa-regular fa-chart-bar fa-fw"></i>
+            <span class="hidden md:inline ml-2">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a class="active rounded-md block  p-2 md:px-4  hover:bg-stone-100" href="settings.html">
+            <i class="fa-solid fa-gear fa-fw"></i>
+            <span class="hidden md:inline ml-2">Settings</span>
+          </a>
+        </li>
+        <li>
+          <a class="rounded-md block  p-2 md:px-4  hover:bg-stone-100" href="profile.html">
+            <i class="fa-regular fa-user fa-fw"></i>
+            <span class="hidden md:inline ml-2">Profile</span>
+          </a>
+        </li>
+        <li>
+          <a class="rounded-md  block  p-2 md:px-4  hover:bg-stone-100" href="projects.html">
+            <i class="fa-solid fa-diagram-project fa-fw"></i>
+            <span class="hidden md:inline ml-2">Projects</span>
+          </a>
+        </li>
+        <li>
+          <a class="rounded-md block p-2 md:px-4 hover:bg-stone-100" href="courses.html">
+            <i class="fa-solid fa-graduation-cap fa-fw"></i>
+            <span class="hidden md:inline ml-2">Courses</span>
+          </a>
+        </li>
+        <li>
+          <a class="rounded-md block p-2 md:px-4 hover:bg-stone-100" href="friends.html">
+            <i class="fa-regular fa-circle-user fa-fw"></i>
+            <span class="hidden md:inline ml-2">Friends</span>
+          </a>
+        </li>
+        <li>
+          <a class=" rounded-md  block  p-2 md:px-4  hover:bg-stone-100" href="files.html">
+            <i class="fa-regular fa-file fa-fw"></i>
+            <span class="hidden md:inline ml-2">Files</span>
+          </a>
+        </li>
+        <li>
+          <a class=" rounded-md  block  p-2 md:px-4  hover:bg-stone-100" href="plans.html">
+            <i class="fa-regular fa-credit-card fa-fw"></i>
+            <span class="hidden md:inline ml-2">Plans</span>
+          </a>
+        </li>
+      </ul>
+</aside>
+<div class="wrapper w-full overflow-hidden">
+    <!-- start head -->
+    <div class="head p-4 bg-white flex items-center justify-between">
+        <div class="relative before:absolute before:content-['\f002'] before:font-['Font_Awesome_6_Free'] before:font-black before:left-2 before:top-1/2 before:-translate-y-1/2 before:text-stone-300" type="search">
+            <input class="border text-sm border-stone-300 rounded-md py-2 pl-7 w-44 focus:w-52 transition-all duration-300 focus:outline-0 " placeholder="Type A Keyword">
+        </div>
+        <div class="flex items-center gap-3">
+            <div class="relative before:absolute before:w-3 before:h-3 before:bg-red before:rounded-full before:-right-1 before:-top-1">
+                <i class="fa-regular fa-bell fa-xl "></i>
+            </div>
+            <img class="w-9 h-9" src="./dist/imgs/avatar.png" alt="">
+        </div>
+    </div>
+    <!-- end head -->
+    <h1 class="title">Settings</h1> 
+    <!-- start Settings -->
+    <div class="Settings  mx-3 md:mx-5 my-5  max-w-full grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-3 md:gap-5">
+          <!-- start control -->
+        <div class="bg-white p-5 rounded-xl">
+            <h2 class="text-2xl font-bold">Site Control</h2>
+            <p class="text-sm text-gray mb-4">Control The Website If There Is Maintenance</p>
+            <div class="flex justify-between items-center">
+                <h3>
+                    Website Control
+                    <span class="block text-gray text-sm mt-1">
+                        Open/Close Website And Type The Reason
+                    </span>
+                </h3>
+                <label>
+                    <input class="peer hidden" type="checkbox" checked>
+                    <div class="toggle-switch"></div>
+                </label>
+            </div>
+            <textarea class="p-5 mt-5  border border-zinc-300 w-full h-40 rounded-lg resize-none text-sm font-light placeholder:text-black focus:outline-none" placeholder="Close Message Content"></textarea>
+        </div>
+        <!-- start control -->
+        <!-- start General Info -->
+        <div class="bg-white p-5 rounded-xl">
+            <h2 class="text-2xl font-bold">General Info</h2>
+            <p class=" text-gray mb-2">General Information About Your Account</p>
+            <form class="flex flex-col gap-1">
+                <label class="text-gray" for="f-name">First Name</label>
+                <input class="p-2 border border-zinc-300 rounded-lg mb-3 focus:outline-none " id="f-name" type="text" placeholder="First Name">
+                <label class="text-gray" for="f-name">Last Name</label>
+                <input class="p-2 border border-zinc-300 rounded-lg mb-3 focus:outline-none " id="l-name" type="text" placeholder="Last Name">
+                <label class="text-gray" for="email">Email</label>
+                <div class="flex justify-center items-center gap-2">
+                    <input class="basis-4/5 p-2 border border-zinc-300 rounded-lg focus:outline-none disabled:cursor-not-allowed disabled:bg-slate-100 text-gray" id="email" type="text" value="mas@nn.sa" disabled>
+                    <a class="text-main-blue basis-1/5 text-center" href="#">Change</a>
+                </div>
+            </form>
+        </div>
+        <!-- end General Info -->
+        <!-- start  Security Info -->
+        <div class="bg-white p-5 rounded-xl">
+            <h2 class="text-2xl font-bold">Security Info</h2>
+            <p class=" text-gray">Security Information About Your Account </p>
+            <div class="divide-y divide-zinc-200">
+                <div class="py-4 flex justify-between items-center">
+                    <p>
+                        Password
+                        <span class="block text-gray">Last Change On 25/10/2021</span>
+                    </p>
+                    <a class=" py-1 px-2 rounded-lg text-white bg-main-blue " href="#">Change</a>
+                </div>
+                <div class="py-4 flex justify-between items-center">
+                    <p>
+                        Two-Factor Authentication
+                        <span class="block text-gray">Enable/Disable The Feature</span>
+                    </p>
+                    <label>
+                        <input  type="checkbox" class="peer hidden">
+                        <div class="toggle-switch"></div>
+                    </label>
+                </div>
+                <div class="py-4 flex justify-between items-center">
+                    <p>
+                        Password
+                        <span class="block text-gray">Last Change On 25/10/2021</span>
+                    </p>
+                    <a class=" py-1 px-2 rounded-lg bg-slate-100 " href="#">Devices</a>
+                </div>
+            </div>
+        </div>
+        <!-- end Security Info -->
+        <!-- start  Social Info  -->
+        <div class="bg-white p-5 rounded-xl">
+            <h2 class="text-2xl font-bold">Social Info </h2>
+            <p class="text-gray mb-3">Social Media Information</p>
+            <div class="space-y-3">
+                <div class="flex justify-center items-center">
+                    <i class="fab fa-twitter text-gray fa-lg p-5 h-10 w-10 border border-r-0  rounded-s-lg border-zinc-400  flex justify-center items-center bg-slate-100"></i>
+                    <input class=" bg-slate-100 border border-zinc-400 rounded-e-lg w-full p-2 focus:outline-none" type="text" placeholder="Twitter Username">
+                </div>
+                <div class="flex justify-center items-center">
+                    <i class="fab fa-facebook-f text-gray fa-lg p-5 h-10 w-10 border border-r-0  rounded-s-lg border-zinc-400  flex justify-center items-center bg-slate-100"></i>
+                    <input class=" bg-slate-100 border border-zinc-400 rounded-e-lg w-full p-2 focus:outline-none" type="text" placeholder="Facebook Username">
+                </div>
+                <div class="flex justify-center items-center">
+                    <i class="fab fa-linkedin-in text-gray fa-lg p-5 h-10 w-10 border border-r-0  rounded-s-lg border-zinc-400  flex justify-center items-center bg-slate-100"></i>
+                    <input class=" bg-slate-100 border border-zinc-400 rounded-e-lg w-full p-2 focus:outline-none" type="text" placeholder="Linkedin Username">
+                </div>
+                <div class="flex justify-center items-center">
+                    <i class="fab fa-youtube text-gray fa-lg p-5 h-10 w-10 border border-r-0  rounded-s-lg border-zinc-400  flex justify-center items-center bg-slate-100"></i>
+                    <input class=" bg-slate-100 border border-zinc-400 rounded-e-lg w-full p-2 focus:outline-none" type="text" placeholder="Youtube Username">
+                </div>
+            </div>
+        </div>
+        <!-- end  Social Info  -->
+        <!-- start Widgets Control-->
+        <div class="bg-white p-5 rounded-xl">
+            <h2 class="text-2xl font-bold">Widgets Control</h2>
+            <p class="text-gray mb-3">Show/Hide Widgets</p>
+            <ul class="space-y-2">
+                <li>
+                    <input class="peer hidden" type="checkbox" id="qd" checked>
+                    <label class="my-checbox  text-xl ml-10 " for="qd">Quick Draft</label>
+                </li>
+                <li>
+                    <input class="peer hidden" type="checkbox" id="yt">
+                    <label class=" my-checbox  text-xl ml-10" for="yt">Yearly Targets</label>
+                </li>
+                <li>
+                    <input class="peer hidden" type="checkbox" id="ts" checked>
+                    <label class=" my-checbox  text-xl ml-10" for="ts">Tickets Statistics</label>
+                </li>
+                <li>
+                    <input class="peer hidden" type="checkbox" id="ln">
+                    <label class=" my-checbox  text-xl ml-10" for="ln">Latest News</label>
+                </li>
+                <li>
+                    <input class="peer hidden" type="checkbox" id="lt" checked>
+                    <label class=" my-checbox  text-xl ml-10" for="lt">Latest Tasks</label>
+                </li>
+                <li>
+                    <input class="peer hidden" type="checkbox" id="tsi" checked>
+                    <label class="my-checbox   text-xl ml-10 " for="tsi">Top Search Items</label>
+                </li>
+            </ul>
+        </div>
+        <!-- end Widgets Control-->
+        <!-- start Widgets Control-->
+        <div class="bg-white p-5 rounded-xl">
+            <h2 class="text-2xl font-bold">Backup Manager</h2>
+            <p class="text-gray mb-3">Control Backup Time And Location</p>
+            <ul class="space-y-2 my-3">
+                <li>
+                    <input class="peer hidden" type="radio" id="Daily" name="time" >
+                    <label class="ml-10 text-xl my-radio" for="Daily">Daily</label>
+                </li>
+                <li>
+                    <input class="peer hidden" type="radio" id="Weekly" name="time" >
+                    <label class="ml-10 text-xl my-radio" for="Weekly">Weekly</label>
+                </li>
+                <li>
+                    <input class="peer hidden" type="radio" id="Monthly" name="time" >
+                    <label class="ml-10 text-xl my-radio" for="Monthly">Monthly</label>
+                </li>
+            </ul>
+            <div class="flex flex-col md:flex-row justify-between gap-3  pt-5 border-t border-zinc-300">
+                <div class="flex-1">
+                    <input class="peer hidden" type="radio" id="server1" name="server">
+                    <div class="peer-checked:text-main-blue peer-checked:border-main-blue p-3 border-2 rounded-lg border-zinc-300 w-full text-center">
+                        <label class="block text-base/none cursor-pointer" for="server1">
+                            <i class="fas fa-server block"></i>
+                            <br>
+                            Megaman
+                        </label>
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <input class="peer hidden" type="radio" id="server2" name="server">
+                    <div class="peer-checked:text-main-blue peer-checked:border-main-blue p-3 border-2 rounded-lg border-zinc-300 w-full text-center">
+                        <label class="block text-base/none  cursor-pointer" for="server2">
+                            <i class="fas fa-server  block"></i>
+                            <br>
+                            Zero
+                        </label>
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <input class="peer hidden" type="radio" id="server3" name="server">
+                    <div class="peer-checked:text-main-blue peer-checked:border-main-blue p-3 border-2 rounded-lg border-zinc-300 w-full text-center ">
+                        <label class="block text-base/none  cursor-pointer" for="server3">
+                            <i class="fas fa-server block "></i>
+                            <br>
+                            Sigma
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end Widgets Control-->
+    </div>
+    <!-- end Settings -->
+</div>
+</div>
+</body>
+</html>
